@@ -1,0 +1,20 @@
+# permissions for end users to view students.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: student-viewer-role
+rules:
+- apiGroups:
+  - study.justk8s.com
+  resources:
+  - students
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - study.justk8s.com
+  resources:
+  - students/status
+  verbs:
+  - get

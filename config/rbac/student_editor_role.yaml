@@ -1,0 +1,24 @@
+# permissions for end users to edit students.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: student-editor-role
+rules:
+- apiGroups:
+  - study.justk8s.com
+  resources:
+  - students
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - study.justk8s.com
+  resources:
+  - students/status
+  verbs:
+  - get

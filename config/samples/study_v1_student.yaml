@@ -1,0 +1,12 @@
+apiVersion: study.justk8s.com/v1alpha1
+kind: Student
+metadata:
+  name: mohamed
+  namespace: insat
+spec:
+  phone: "1231234235"
+  email: "me@justk8s.com"
+  lastName: "Foulen"
+  classRef:
+    name: "dev-31"
+    namespace: insat
