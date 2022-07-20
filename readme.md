@@ -1,6 +1,6 @@
 ## CRD
 
-CRD Design: 
+CRD Design:
 
 
 ```yaml
