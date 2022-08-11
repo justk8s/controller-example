@@ -1,2 +1,3 @@
-# crd-demo
-CRD demo
+# controller-example
+
+A K8s controller minmal example.
